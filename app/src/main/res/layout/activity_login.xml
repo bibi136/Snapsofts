@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvEmail"
         android:layout_marginBottom="10dp"
-        android:hint="Enter Email Address" />
+        android:hint="@string/hintemail" />
 
     <TextView
         android:id="@+id/tvPassword"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvPassword"
         android:layout_marginBottom="10dp"
-        android:hint="Enter Password"
+        android:hint="@string/hintpassword"
         android:inputType="textPassword" />
 
     <Button
