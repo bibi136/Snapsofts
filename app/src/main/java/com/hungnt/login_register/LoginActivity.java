@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class LoginActivity extends Activity implements View.OnClickListener {
 
     Button bLogin;
     EditText etUsername,etPassword;
@@ -18,7 +18,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         btRegister = (TextView) findViewById(R.id.tvRegister);
 
@@ -34,7 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tvRegister:
-                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(intent);
                 break;
         }
